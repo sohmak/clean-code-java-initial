@@ -5,14 +5,6 @@ import org.junit.Test;
 
 public class CustomerTest {
     @Test
-    public void test() {
-
-        int expected = 3;
-
-        Assert.assertEquals(expected, 1 + 2);
-    }
-
-    @Test
     public void statementTest() {
         Customer jimmy = new Customer("Jimmy");
         jimmy.addRental(new Rental(new Movie("Inception", 0), 2));
@@ -27,9 +19,5 @@ public class CustomerTest {
                 "\tTitanic\t9.0\n" +
                 "Amount owed is 17.0\n" +
                 "You earned 5 frequent renter points");
-
-
     }
-
-
 }
